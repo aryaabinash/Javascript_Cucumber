@@ -1,0 +1,33 @@
+PS D:\Code\testcafe-cucumber-master\testcafe-cucumber-master> .\node_modules\.bin\cucumber-js.cmd --tags '@arya' -f node_modules/cucumber-pretty -f json:reports/cucumber_report.json --world-parameters '{\"browser\": \"chrome\"}' --format rerun:@rerun.txt
+
+This is the command to run test on terminal.
+
+.\node_modules\.bin\cucumber-js.cmd --tags '@arya'   , run this command to generate json file report
+
+node index.js   after running the above run this command to gernarate html report.
+
+Below are the content of index.js
+var reporter = require('cucumber-html-reporter');
+ 
+var options = {
+        theme: 'bootstrap',
+        jsonFile: 'reports/cucumber-report.json',
+        output: 'reports/cucumber-report.html',
+        reportSuiteAsScenarios: true,
+        scenarioTimestamp: true,
+        launchReport: true,
+        metadata: {
+            "App Version":"Data3Sixty Analyze v3.5.0.1",
+            "Test Environment": "BDD Cucumber - UI test",
+            "Browser": "Chrome 78.0.3904.97",
+            "Platform": "Windows 10",
+            "Parallel": "Scenarios",
+            "Executed": "Remote"
+        }
+    };
+ 
+    reporter.generate(options);
+Change the theme for style of reports
+npm install cucumber-html-reporter --save-dev  , Before everything run this command on terminal.
+For more details follow the below link,
+https://www.npmjs.com/package/cucumber-html-reporter
