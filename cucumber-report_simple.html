@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cucumber Feature Report</title>
+    <style type="text/css">
+     body {
+    font: 14px Consolas, Courier, monospace;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    color: #111111;
+    font-weight: bold;
+}
+
+.failed {
+    background-color: #ff9999;
+}
+
+.passed {
+    background-color: #99ff99;
+}
+
+.step {
+    margin: 10px;
+}
+
+.step .text {
+    border-radius: 3px;
+    color: #666666;
+    padding: 5px;
+    display: block;
+}
+
+.container {
+    background: #f8f8f8;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    margin: 10px;
+}
+    </style>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    
+<div class="feature container">
+  <h3 class="title"><span class="highlight">Feature: </span>Searching for TestCafe on GitHub</h3>
+   <p>  I want to find TestCafe repository on GitHub</p>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Searching for TestCafe on GitHub</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Given </span> I open the GitHub page</span>
+             
+
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I am typing my search request "TestCafe" on GitHub</span>
+             
+
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> I am pressing enter key on GitHub</span>
+             
+
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> I should see that the first GitHub's result is DevExpress/testcafe</span>
+             
+
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+
+             
+          </p>
+        </div>
+      
+    </div>
+  
+</div>
+ 
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <script>
+       $(document).ready(function() {
+    $('a.toggle').on('click', function() {
+        if ($(this).text() === 'Screenshot -') {
+            $(this).text('Screenshot +');
+            $(this).siblings('a.screenshot').find('img').hide();
+        } else {
+            $(this).text('Screenshot -');
+            $(this).siblings('a.screenshot').find('img').show();
+        }
+    });
+});
+
+     </script>
+  </body>
+</html>
